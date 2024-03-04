@@ -41,7 +41,7 @@ function redirect_to_index() {
 		$path_prefix = './';
 	}
 
-	header( 'Location: ' . $path_prefix );
+	header( "Location: $path_prefix" );
 	exit;
 }
 ?><!DOCTYPE html>
