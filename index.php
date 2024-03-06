@@ -17,7 +17,7 @@ if ( isset( $_SERVER['PATH_INFO'] ) ) {
 					'type' => $_FILES['upfile']['type'],
 					'size' => $_FILES['upfile']['size'],
 				] );
-				unlink( $_FILES['upfile']['tmp_name'] ); // stored temporarily only
+				unlink( $_FILES['upfile']['tmp_name'] ); // file stored temporarily only
 				exit;
 			} else {
 				header( 'Content-Type: application/json; charset=utf-8' );
